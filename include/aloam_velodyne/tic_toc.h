@@ -9,7 +9,7 @@
 
 class TicToc
 {
-  public:
+public:
     TicToc()
     {
         tic();
@@ -27,6 +27,6 @@ class TicToc
         return elapsed_seconds.count() * 1000;
     }
 
-  private:
+private:
     std::chrono::time_point<std::chrono::system_clock> start, end;
 };
